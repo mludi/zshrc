@@ -25,3 +25,4 @@ fi
 alias vm="ssh vagrant@127.0.0.1 -p 2222"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 DEFAULT_USER="matthias"
+alias copypath='pwd|pbcopy'
