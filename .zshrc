@@ -11,7 +11,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
 export PATH=~/.composer/vendor/bin:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
-
+export PATH=/Users/matthias/Library/Android/sdk/platform-tools:$PATH
 export GOPATH=$HOME/gocode
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
