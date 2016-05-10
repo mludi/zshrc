@@ -49,17 +49,7 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
-alias swift22='/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin/swift'
-
-alias c='clear'
-
 # git aliases
 alias gg="git log --oneline --all --abbrev-commit --graph --decorate --color"
 alias gis="git status -s"
 alias gd="git diff"
-rgc() { git commit -m"`curl -s http://whatthecommit.com/index.txt`"; } #random git commit message
-function gcom() { git commit -m $1; }
-function gi() { wget http://www.gitignore.io/api/$1 -O ./.gitignore ;}
-alias gpanic="git checkout ."
-
-alias swift="xcrun swift"
