@@ -8,8 +8,7 @@ POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 # plugins
-plugins=(git)
-
+plugins=(git, zsh-autosuggestions)
 
 # User configuration
 
@@ -63,3 +62,4 @@ function gi() { wget http://www.gitignore.io/api/$1 -O ./.gitignore ;}
 alias gpanic="git checkout ."
 
 alias swift="xcrun swift"
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
