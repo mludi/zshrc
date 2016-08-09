@@ -30,7 +30,9 @@ fi
 
 alias vm="ssh vagrant@127.0.0.1 -p 2222"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 DEFAULT_USER="matthias"
+
 alias copypath='pwd|pbcopy'
 
 alias please='sudo'
@@ -48,8 +50,6 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
-alias swift22='/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin/swift'
-
 alias c='clear'
 
 # git aliases
@@ -63,3 +63,14 @@ alias gpanic="git checkout ."
 
 alias swift="xcrun swift"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
+
+alias start_mongodb='mongod --config /usr/local/etc/mongod.conf'
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if [ -f ~/.zshenv ]; then
+    source ~/.zshenv
+fi
+alias appcode="open -a AppCode.app"
