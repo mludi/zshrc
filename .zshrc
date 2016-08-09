@@ -64,9 +64,9 @@ alias gpanic="git checkout ."
 alias swift="xcrun swift"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
-
 alias start_mongodb='mongod --config /usr/local/etc/mongod.conf'
-
+alias stop_mongo_server='brew services stop mongodb'
+alias restart_mongo_server='brew services restart mongodb'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
